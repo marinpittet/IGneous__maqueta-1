@@ -1,0 +1,264 @@
+/*
+color-guide {
+	primary: #00A599;
+	complemetary: #0999BC;
+}
+
+transitions: 
+	-webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: background-color 1s;
+*/
+* {
+    box-sizing: border-box;
+}
+/* Barra de navegación con despliegue lateral */
+
+nav div.navbar {
+    line-height: calc(52px - 10px);
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #00A599;
+    padding: 5px 2rem;
+    height: 52px;
+    grid-column: span 12;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+}
+
+nav .navbar a {
+    color: #fff;
+}
+
+nav .navbar h1 {
+    display: none;
+}
+
+nav .navbar .navbar__brand img {
+    max-height: calc(52px - 10px);
+    line-height: calc(52px - 10px);
+    vertical-align: middle;
+    padding: 5px;
+}
+
+nav div.navbar a {
+    color: #00A599;
+}
+
+nav div.navbar ul .navbar__items {
+    display: flex;
+    margin-left: 2rem;
+}
+
+nav div.navbar li {
+    padding: 0 1rem;
+}
+
+nav div.navbar li:hover a {
+    color: #FFFFFF;
+}
+
+nav div.navbar li:hover {
+    color: #FFFFFF;
+}
+
+nav div.navbar li.hoverable:hover {
+    background-color: #0999BC;
+    padding: 0 1rem;
+    border-radius: 5px;
+    height: 40px;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+nav div.navbar .dropdown-content {
+    background-color: rgba(9, 153, 188, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+nav div.navbar .dropdown-content .dropdown-item li {
+    padding: 5px;
+}
+
+nav div.navbar .dropdown-content .dropdown-item li a {
+    color: #FFFFFF;
+}
+
+nav div.navbar .dropdown-content .dropdown-item li:hover {
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    padding: 5px;
+}
+nav div.navbar .dropdown-content .dropdown-item li:hover a {
+	color: #00A599;
+}
+nav .navbar .navbar__items {
+    display: flex;
+    margin-left: auto;
+}
+
+nav .navbar .navbar__toggle {
+    display: none;
+    margin: auto 0 auto auto;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+nav .navbar .sidenav--close {
+    display: none;
+    right: 0;
+}
+
+nav .navbar .sidenav--open {
+    display: flex;
+    right: 0;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 10;
+    top: 52px;
+    background-color: #142744;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.95;
+    transition: 2s;
+}
+
+nav .navbar .sidenav--open ul.sidenav__items li {
+    width: 90vw;
+}
+
+nav .navbar .sidenav--open ul.sidenav__items li:hover a {
+    color: #FFFFFF;
+}
+
+nav .navbar .sidenav--open ul.sidenav__items li:hover {
+    background-color: #0999BC;
+    padding: 0 1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+nav .navbar .sidenav__items {
+    margin: 0 auto;
+    font-weight: 300;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+/* /Barra de navegación con despliegue lateral */
+
+@media only screen and (min-width: 1024px) {
+    nav .navbar {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav .navbar .navbar__items {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+
+/*@media only screen and (max-width: 1200px) {
+	nav .navbar .navbar__items {
+		font-size: 0.8rem;
+	}
+	}*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    nav .navbar .navbar__items {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav .navbar .navbar__items {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav .navbar .navbar__toggle {
+        display: block;
+    }
+    nav .navbar .navbar__toggle .fa-bars {
+        opacity: 0.8;
+        display: block;
+        line-height: 40px;
+        transition: 1s;
+    }
+    nav .navbar .navbar__toggle .fa-times {
+        opacity: 0;
+        display: none;
+        line-height: 40px;
+        transition: 1s;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    nav .navbar .navbar__toggle {
+        display: block;
+    }
+    nav .navbar .navbar__toggle .fa-bars {
+        opacity: 0.8;
+        display: block;
+        line-height: 40px;
+        transition: 1s;
+    }
+    nav .navbar .navbar__toggle .fa-times {
+        opacity: 0;
+        display: none;
+        line-height: 40px;
+        transition: 1s;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav .navbar .navbar__toggle {
+        display: block;
+    }
+    nav .navbar .navbar__toggle .fa-bars {
+        opacity: 0.8;
+        display: block;
+        line-height: 40px;
+        transition: 1s;
+    }
+    nav .navbar .navbar__toggle .fa-times {
+        opacity: 0;
+        display: none;
+        line-height: 40px;
+        transition: 1s;
+    }
+}
+
+
+
+/* /Barra de navegación con despliegue lateral */
+header .hero {
+	display: flex;
+}
+header .hero-body {
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    vertical-align: middle;
+}
+header img {
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	width: 20vw;
+}
+header .hero-body h1 {
+	text-align: center;
+}
