@@ -2,29 +2,34 @@
 color-guide {
 	primary: #00A599;
 	complemetary: #0999BC;
+	primary transparency: rgba(9, 153, 188, 0.5);
 }
 
 transitions: 
 	-webkit-transition: 1s;
     -o-transition: 1s;
-    transition: background-color 1s;
+    transition: 1s;
 */
-* {
+*, body, html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /* Barra de navegación con despliegue lateral */
 
 nav div.navbar {
     line-height: calc(52px - 10px);
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0);
     color: #00A599;
     padding: 5px 2rem;
     height: 52px;
     grid-column: span 12;
     position: fixed;
-    display: flex;
     z-index: 100;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 nav .navbar a {
@@ -243,6 +248,8 @@ nav .navbar .sidenav__items {
 
 
 /* /Barra de navegación con despliegue lateral */
+
+/* header jumbotron*/
 header .hero {
 	display: flex;
 }
@@ -253,12 +260,65 @@ header .hero-body {
     display: flex;
     vertical-align: middle;
 }
+header .hero-body .container {
+	height: calc(100vh - 52px);
+	width: 100vw;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+header .hero-body .filter {
+	background: linear-gradient( rgba(15,28,38, 1), rgba(15,28,38, .9), rgba(15,28,38, 0.7), rgba(15,28,38, 0));
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+header .herotron {
+	display: table-cell;
+	vertical-align: middle;
+}
 header img {
 	margin: 0 auto;
 	display: flex;
 	text-align: center;
-	width: 20vw;
+	max-width: 50vw;
 }
 header .hero-body h1 {
 	text-align: center;
+	color: rgba(255,255,255,0.8);
+	margin-top: 1rem;
+}
+header .hero-body h1 strong {
+	color:  #FFFFFF;
+	font-weight: 700;
+}
+/* /.header jumbotron*/  
+
+/* quienes somos*/
+section.quienes-somos .selector{
+	text-align: center;
+	background-color: #0999BC;
+	padding-top: 2rem;
+}
+section.quienes-somos .selector .button {
+	width: 200px;
+	margin: 0 20px;
+}
+section.quienes-somos .columns {
+	margin: 0;
+}
+section.quienes-somos .back-color {
+ 	background-color: #0999BC;
+}
+section.quienes-somos .mision {
+ 	text-align: center;
+ 	padding: 4rem;
+ 	color: #FFFFFF; 
+}
+section.quienes-somos .mision p {
+ 	text-align: left;
+}
+section.quienes-somos .team {
+	display: none;
 }
