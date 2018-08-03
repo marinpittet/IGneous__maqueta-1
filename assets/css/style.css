@@ -15,6 +15,17 @@ transitions:
     margin: 0;
     padding: 0;
 }
+
+/*generales*/
+.inactive {
+	display: none;
+}
+.bold {
+	font-weight: 700;
+}
+.light {
+	font-weight: 300;
+}
 /* Barra de navegación con despliegue lateral */
 
 nav div.navbar {
@@ -24,8 +35,10 @@ nav div.navbar {
     color: #00A599;
     padding: 5px 2rem;
     height: 52px;
+    max-height: 52px;
     grid-column: span 12;
     position: fixed;
+    display: flex;
     z-index: 100;
     -webkit-transition: background-color 1s;
     -o-transition: background-color 1s;
@@ -320,5 +333,20 @@ section.quienes-somos .mision p {
  	text-align: left;
 }
 section.quienes-somos .team {
+	color: #FFFFFF;
+	padding: 4rem 0;
 	display: none;
+}
+section.quienes-somos .team .subtitle{
+ 	text-align: center;
+ 	color: #FFFFFF;
+}
+section.quienes-somos .team .detalle {
+	float: left;
+	margin-left: 1rem;
+}
+section.quienes-somos .team img {
+	float: left;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
 }

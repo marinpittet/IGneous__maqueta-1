@@ -78,8 +78,36 @@ $(function(){
 	function parallax() {
 		var wScroll = $(window).scrollTop();
 
-		$('.hero-body').css('background-position', '0%'+(50-(wScroll*1))+'%')
+		$('.hero-body').css('background-position', '50%'+(50-(wScroll*.5))+'%')
 	}
     // end navbar opacity and parallax
+
+    //start section toggle visibility with buttons mision and equipo
+    $('#mision').click(function(e){
+    	e.preventDefault();
+
+    	var mision = $('.mision');
+    	var team = $('.team');
+
+    	team.fadeOut('slow', function() {
+    		team.css('display', 'none');
+            mision.fadeIn('slow');
+    		mision.css('display', 'block');
+        });	
+    })
+
+    $('#equipo').click(function(e){
+    	e.preventDefault();
+
+    	var mision = $('.mision');
+    	var team = $('.team');
+
+    	mision.fadeOut('slow', function() {
+    		mision.css('display', 'none');
+            team.fadeIn('slow');
+    		team.css('display', 'block');
+        });	
+    })
+    //end section toggle visibility with buttons mision and equipo
 
 })
