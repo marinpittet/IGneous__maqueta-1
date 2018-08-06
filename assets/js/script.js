@@ -9,6 +9,7 @@ $(function(){
 			}, 1000);
 		}
 	});
+	
 	// start Toggleable Navbar
 	$('.navbar__toggle').click(function() {
 
@@ -67,7 +68,7 @@ $(function(){
     function navbar() {
     	var wScroll = $(window).scrollTop();
 
-    	if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     		$('.navbar').css({
     			backgroundColor: 'rgba(255,255,255,1)',
     			borderBottom: 'solid 1px #00A599'
@@ -156,5 +157,4 @@ $(function(){
      	});	
      })
     //end section toggle visibility with buttons estrategia y proceso
-
 })
