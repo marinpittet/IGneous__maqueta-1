@@ -110,4 +110,38 @@ $(function(){
     })
     //end section toggle visibility with buttons mision and equipo
 
+     //start section toggle visibility with buttons estrategia y proceso
+    $('#invest').click(function(e){
+    	e.preventDefault();
+
+    	$('#select').removeClass('is-active');
+    	$('#invest').addClass('is-active');
+
+    	var invest = $('.estrategia__detail');
+    	var selection = $('.estrategia__proceso');
+
+    	selection.fadeOut('slow', function() {
+    		selection.css('display', 'none');
+            invest.fadeIn('slow');
+    		invest.css('display', 'block');
+        });	
+    })
+
+    $('#select').click(function(e){
+    	e.preventDefault();
+		
+    	$('#invest').removeClass('is-active');
+    	$('#select').addClass('is-active');
+
+		var invest = $('.estrategia__detail');
+    	var selection = $('.estrategia__proceso');
+
+    	invest.fadeOut('slow', function() {
+    		invest.css('display', 'none');
+            selection.fadeIn('slow');
+    		selection.css('display', 'block');
+        });	
+    })
+    //end section toggle visibility with buttons estrategia y proceso
+
 })

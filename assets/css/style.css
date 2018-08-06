@@ -309,7 +309,7 @@ header .hero-body h1 strong {
 /* /.header jumbotron*/  
 
 /* quienes somos*/
-section.quienes-somos .selector{
+section.quienes-somos {
 	text-align: center;
 	background-color: #0999BC;
 	padding-top: 2rem;
@@ -321,8 +321,9 @@ section.quienes-somos .selector .button {
 section.quienes-somos .columns {
 	margin: 0;
 }
-section.quienes-somos .back-color {
- 	background-color: #0999BC;
+section.quienes-somos .team .column .caja {
+	display: flex;
+	justify-content: center;
 }
 section.quienes-somos .mision {
  	text-align: center;
@@ -334,19 +335,76 @@ section.quienes-somos .mision p {
 }
 section.quienes-somos .team {
 	color: #FFFFFF;
-	padding: 4rem 0;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
 	display: none;
 }
 section.quienes-somos .team .subtitle{
  	text-align: center;
  	color: #FFFFFF;
 }
-section.quienes-somos .team .detalle {
-	float: left;
-	margin-left: 1rem;
-}
 section.quienes-somos .team img {
-	float: left;
 	border: 2px solid #FFFFFF;
 	border-radius: 5px;
 }
+/* end quienes somos*/
+
+/* start empresa*/
+section.empresa .selector{
+	text-align: center;
+	margin: 2rem;
+}
+section.empresa .selector .button {
+	padding: 1rem;
+	margin: 0 5px;
+    border-color: #0999BC;
+    color: #0999BC;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+section.empresa .selector .button:hover {
+	padding: 1rem;
+	margin: 0 5px;
+    background-color: #0999BC;
+    color: #FFFFFF;
+}
+section.empresa .selector .button.is-active {
+	padding: 1rem;
+	margin: 0 5px;
+    background-color: #0999BC;
+    color: #FFFFFF;
+}
+section.empresa .estrategia__detail .title {
+	text-align: center;
+	margin-bottom: 2rem;
+	color: #0999BC;
+}
+section.empresa .estrategia__detail .title span.light {
+	color: #AAAAAA;
+	font-weight: 300;
+}
+section.empresa .estrategia__detail .subtitle {
+	text-align: center;
+}
+section.empresa .estrategia__detail hr {
+	background-color: #0999BC;
+	opacity: .2;
+}
+section.empresa .estrategia__detail ul {
+	margin-left: 1rem;
+	list-style-type: circle;
+	padding-left: 1rem;
+}
+section.empresa .estrategia__detail .text {
+	padding: 2rem;
+	margin-bottom: 1rem;
+}
+section.empresa .estrategia__detail .text p {
+	margin-bottom: 2rem;
+}
+section.empresa .estrategia__proceso {
+	text-align: center;
+	display: none;
+}
+/* end empresa*/
