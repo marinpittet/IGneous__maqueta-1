@@ -1,4 +1,4 @@
-/*
+
 color-guide {
 	primary: #00A599;
 	complemetary: #0999BC;
@@ -439,4 +439,23 @@ section.empresa .otras-empresas hr {
 	background-color: #00A599;
 }
 /* subsection empresas*/
-/* end empresa*/
+/* subseccion iniciativas sociales*/
+section.empresa .iniciativas-sociales {
+	text-align: center;
+}
+section.empresa .iniciativas-sociales .social {
+	padding: 2rem;
+}
+section.empresa .iniciativas-sociales .social p {
+	text-align: left;
+	margin-bottom: 1rem;
+}
+/* endsubseccion iniciativas sociales*/
+/* end empresa
+/*footer*/
+footer {
+	background-color: #111111;
+	padding: 2rem;
+	text-align: center;
+}
+/*end footer*/
