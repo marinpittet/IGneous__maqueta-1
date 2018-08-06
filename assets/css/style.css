@@ -407,4 +407,36 @@ section.empresa .estrategia__proceso {
 	text-align: center;
 	display: none;
 }
+/* subsection empresas*/
+section.empresa .empresas {
+	background: linear-gradient(to right, #00A599, #0999BC);
+	text-align: center;
+	margin: 3rem 0;
+	padding: 4rem;
+}
+section.empresa .empresas p {
+	color: #FFFFFF;
+}
+section.empresa .empresas .titulos {
+	margin-bottom: 3rem;
+}
+section.empresa .empresas-activas {
+	border-radius: 10px;
+	border: solid 2px #FFFFFF;
+	padding: 4rem;
+}
+section.empresa .otras-empresas {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	text-align: center;
+	margin: 3rem 0 0 0 ;
+	padding: 4rem;
+}
+section.empresa .otras-empresas p {
+	color: #00A599;
+}
+section.empresa .otras-empresas hr {
+	background-color: #00A599;
+}
+/* subsection empresas*/
 /* end empresa*/

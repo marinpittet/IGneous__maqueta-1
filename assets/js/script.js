@@ -62,7 +62,8 @@ $(function(){
 				borderBottom: 'solid 1px #00A599'
 			});
 			$('.dropdown-content').css({
-    			borderRadius: '0px 0px 5px 5px'
+    			borderRadius: '0px 0px 5px 5px',
+    			backgroundColor: 'rgba(9, 153, 188, 0.9)'
     		});
 		} else {
 			$('.navbar').css({
@@ -70,7 +71,8 @@ $(function(){
 				borderBottom: 'none'
 			});
 			$('.dropdown-content').css({
-    			borderRadius: '5px'
+    			borderRadius: '5px',
+    			backgroundColor: 'rgba(9, 153, 188, 0.5)'
     		});
 		}
 	}
